@@ -22,8 +22,8 @@ accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a app ID and app secret.
 
     passport.use(new GoogleTokenStrategy({
-        clientID: FACEBOOK_APP_ID,
-        clientSecret: FACEBOOK_APP_SECRET
+        clientID: GOOGLE_CLIENT_ID,
+        clientSecret: GOOGLE_CLIENT_SECRET
       },
       function(accessToken, refreshToken, profile, done) {
         User.findOrCreate({ googleId: profile.id }, function (err, user) {
