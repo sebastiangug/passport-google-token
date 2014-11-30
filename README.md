@@ -32,6 +32,17 @@ accepts these credentials and calls `done` providing a user, as well as
       }
     ));
 
+#### Authenticate Requests
+
+Use `passport.authenticate('google-token')` to authenticate requests.
+
+    router.get('/auth/google/token', passport.authenticate('google-token'),
+     function(req, res) {
+      res.send(req.user);
+    });
+
+GET request need to have `access_token` and optionally the `refresh_token` in either the query string or set as a header.  If a POST is being preformed they can also be included in the body of the request.
+
 ## Credits
 
   - [Nicholas Penree](http://github.com/drudge)
