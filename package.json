@@ -1,6 +1,6 @@
 {
   "name": "passport-google-token",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Google token authentication strategy for Passport.",
   "author": {
     "name": "Rob DiMarco",
@@ -16,7 +16,7 @@
   "main": "./lib/passport-google-token",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport-oauth": "0.1.x"
+    "passport-oauth": "^1.0.0"
   },
   "engines": { "node": ">= 0.4.0" },
   "licenses": [ {
