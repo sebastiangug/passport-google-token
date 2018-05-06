@@ -14,6 +14,10 @@ unobtrusively integrated into any application or framework that supports
 
 ## Usage
 
+#### Import Module
+
+const GoogleTokenStrategy = require("passport-google-token").Strategy;
+
 #### Configure Strategy
 
 The Google authentication strategy authenticates users using a Google
